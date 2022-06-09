@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f252e"
+    tools:context=".Scene01">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="15dp">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingHorizontal="10dp"
+                android:text="@string/como_podemos_ajud_l"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/deep_yellow"
+                android:textSize="34sp" />
+        </RelativeLayout>
+
+        <!-- CARD A -->
+        <RelativeLayout
+            android:onClick="searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/layout_main_card"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buscar_ncarro"
+                android:textColor="#ffffff"
+                android:inputType="none"
+                android:textSize="30sp"
+                android:padding="25dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="@string/todo"
+                    android:inputType="none"
+                    android:src="@drawable/ic_baseline_search_24"
+                    app:tint="#7c818c" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- CARD A -->
+        <RelativeLayout
+            android:onClick="appointmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:background="@drawable/layout_main_card"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consultar_nreserva"
+                android:inputType="none"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:padding="25dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_baseline_list_alt_24"
+                    app:tint="#7c818c"></ImageView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

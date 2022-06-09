@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="como_podemos_ajud_l">Como podemos Ajudá-lô?</string>
+    <string name="buscar_ncarro">Buscar \nCarro</string>
+    <string name="consultar_nreserva">Consultar \nReserva</string>
+    <string name="data_de_retirada">Data de Retirada</string>
+    <string name="data_de_entrada">Data de Entrada</string>
+    <string name="sua_localiza_o">Sua Localização</string>
+    <string name="procurar">Procurar</string>
+    <string name="buscar_carros">Buscar Carros</string>
+    <string name="todo">TODO</string>
+    <string name="reserva">Reserva</string>
+    <string name="dados_da_reserva">Dados da Reserva</string>
+    <string name="cpf">CPF</string>
+    <string name="carros_dispon_veis">Carros Disponíveis</string>
+    <string name="pequeno">Pequeno</string>
+    <string name="medium">Medium</string>
+    <string name="suv">SUV</string>
+    <string name="premium">Premium</string>
+    <string name="seguir_sem_prote_o">Seguir Sem Proteção</string>
+    <string name="seguir_c_prote_o">Seguir C/ Proteção</string>
+    <string name="quilometragem_livre">Quilometragem Livre</string>
+    <string name="detalhes_da_oferta">Detalhes da Oferta</string>
+    <string name="titulo_do_veiculo">Titulo do Veiculo</string>
+    <string name="cancelamento_grat_s_at_48_horas_antes_da_retirada_n">Cancelamento gratís até 48 horas antes da retirada\n</string>
+    <string name="prote_o_contra_roubo_com_franquia_de_rs">Proteção contra roubo com franquia de RS:</string>
+    <string name="isens_o_por_colis_o_com_franquia_de_rs">Isensão por colisão com franquia de RS:</string>
+    <string name="portas">Portas</string>
+    <string name="malas">Malas</string>
+    <string name="economico">Economico</string>
+    <string name="km_livres">KM Livres</string>
+    <string name="dados_do_comprador">Dados do Comprador</string>
+    <string name="dados_cadastrais">Dados Cadastrais</string>
+    <string name="ir_para_pagamento">Ir para Pagamento</string>
+    <string name="e_mail">E-mail</string>
+    <string name="mais_de_6_caracteres">Mais de 6 caracteres</string>
+    <string name="cpf_mask">###/###/###/##</string>
+    <string name="number_mask">(##)#####-####</string>
+    <string name="telefone">Telefone</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="finaliza_o">Finalização</string>
+    <string name="dados_do_pagamento">Dados do Pagamento</string>
+    <string name="termos_de_condi_es_ao_clicar_em_reservar_voc_confirma_que_leu_entendeu_e_concordou_com_nossos_termos_gerais_termos_da_apolice_e_os_termos_de_aluguel_da_locadora">Termos de condições: Ao clicar em RESERVAR você confirma que leu, entendeu e concordou com nossos termos gerais, termos da apolice e os termos de aluguel da locadora.\n Para ler os Termos, clique aqui!</string>
+    <string name="cvc">CVC</string>
+    <string name="date_mask">##/##/####</string>
+    <string name="card_mask">####-####-####-####</string>
+    <string name="data_de_validade">Data de Validade</string>
+    <string name="numero_do_cart_o">Numero do cartão</string>
+    <string name="nome_do_titular">Nome do Titular</string>
+    <string name="cancelar_agenda">Cancelar Agenda</string>
+    <string name="valor_total">Valor total</string>
+    <string name="exemplo_exemplo_com_br">exemplo@exemplo.com.br</string>
+    <string name="seu_nome_completo_aqui">Seu nome completo aqui</string>
+    <string name="termos_e_condi_es">Termos e Condições</string>
+    <string name="blablabla_infinito">Blablabla infinito</string>
+
+        <string-array name="cidades">
+            <item>São Paulo</item>
+            <item>Cidade 01</item>
+            <item>Cidade 02</item>
+            <item>Cidade 03</item>
+        </string-array>
+
+</resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1f252e"
+    tools:context=".Scene02">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_arrow_back_ios_24"
+                android:backgroundTint="@color/light_gray"
+                android:contentDescription="@string/todo"
+                android:onClick="returnToMainButton"
+                tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="@string/buscar_carros"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/deep_yellow"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginHorizontal="125dp"
+            app:srcCompat="@android:drawable/ic_dialog_map"
+            android:contentDescription="@string/todo"
+            app:tint="@color/light_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="40dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="50dp"
+                app:cardBackgroundColor="#242a33"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/black"
+                        android:paddingStart="10dp"
+                        android:src="@drawable/ic_baseline_calendar_today_24"
+                        app:tint="@color/light_gray"
+                        android:paddingEnd="10dp"
+                        android:contentDescription="@string/todo" />
+
+
+                    <EditText
+                        android:id="@+id/data_retirada"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:autofillHints=""
+                        android:ems="10"
+                        android:hint="@string/data_de_retirada"
+                        android:inputType="date"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="10dp"
+                        android:textColorHint="@color/light_gray"
+                        android:textSize="30sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="50dp"
+                app:cardBackgroundColor="#242a33"
+                app:cardCornerRadius="35dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:background="@color/black"
+                        android:paddingStart="10dp"
+                        android:src="@drawable/ic_baseline_calendar_today_24"
+                        app:tint="@color/light_gray"
+                        android:paddingEnd="10dp"
+                        android:contentDescription="@string/todo" />
+
+                    <EditText
+                        android:id="@+id/data_entrada"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:autofillHints=""
+                        android:ems="10"
+                        android:hint="@string/data_de_entrada"
+                        android:inputType="date"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:textColorHint="@color/light_gray"
+                        android:textSize="30sp"
+                        android:paddingEnd="10dp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="50dp"
+                app:cardBackgroundColor="#242a33"
+                app:cardCornerRadius="35dp">
+
+                    <Spinner
+                        android:gravity="center"
+                        android:id="@+id/data_location"
+                        android:spinnerMode="dropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/light_gray"
+                        android:textSize="30sp"
+                        tools:ignore="RtlSymmetry" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:onClick="carSearch"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="50dp"
+                app:cardCornerRadius="35dp">
+
+                <TextView
+                    android:background="@drawable/comum_button"
+                    android:paddingTop="15dp"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/procurar"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

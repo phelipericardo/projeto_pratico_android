@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f252e"
+    tools:context=".Scene03">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_baseline_arrow_back_ios_24"
+                android:onClick="returnButton"
+                android:backgroundTint="#7c818c"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:text="@string/reserva"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/deep_yellow"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/dados_da_reserva"
+                android:inputType="none"
+                android:textAlignment="center"
+                android:textColor="@color/deep_yellow"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:layout_marginTop="100dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="50dp"
+                    app:cardBackgroundColor="#242a33"
+                    app:cardCornerRadius="35dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/cpf_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:ems="10"
+                            android:paddingTop="10dp"
+                            android:hint="@string/cpf"
+                            android:inputType="number"
+                            android:textColor="#7c818c"
+                            android:textColorHint="#7c818c"
+                            android:textAlignment="center"
+                            android:textSize="30sp"
+                            android:autofillHints="" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="50dp"
+                    app:cardBackgroundColor="#242a33"
+                    app:cardCornerRadius="35dp">
+
+                        <EditText
+                            android:id="@+id/reserva_n_reserva"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:ems="10"
+                            android:hint="@string/reserva"
+                            android:inputType="number"
+                            android:paddingTop="10dp"
+                            android:textAlignment="center"
+                            android:textColor="#7c818c"
+                            android:textColorHint="#7c818c"
+                            android:textSize="30sp"
+                            tools:ignore="RtlSymmetry"
+                            android:importantForAutofill="no" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:onClick="searchForAppointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="50dp"
+                    app:cardCornerRadius="35dp">
+
+                    <TextView
+                        android:background="@drawable/comum_button"
+                        android:paddingTop="15dp"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/procurar"
+                        android:textColor="@color/black"
+                        android:textSize="32sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
