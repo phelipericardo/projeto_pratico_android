@@ -25,6 +25,9 @@ public interface CarDao {
     @Query("UPDATE Car SET status=\"locado\" WHERE id=:idCarro")
     void locarCarro(int idCarro );
 
+    @Query("UPDATE Car SET status=\"livre\" WHERE id=:idCarro")
+    void desLocarCarro(int idCarro );
+
     @Update
     void locarCarro( Car ... alunos);
 
