@@ -16,6 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -23,19 +24,19 @@
             android:padding="15dp">
 
             <ImageView
-                android:layout_gravity="center"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_gravity="center"
                 android:background="@drawable/ic_baseline_arrow_back_ios_24"
                 android:backgroundTint="#7c818c"
                 android:onClick="returnAvalible"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
-                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:gravity="center"
                 android:inputType="none"
                 android:text="@string/detalhes_da_oferta"
                 android:textAlignment="center"
@@ -121,42 +122,6 @@
                         android:textColor="#7c818c"
                         android:textSize="26sp" />
 
-                    <TextView
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:text="@string/km_livres"
-                        android:textAlignment="center"
-                        android:textColor="#7c818c"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/car_avalible_km"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="50dp"
-                        android:text="0"
-                        android:textAlignment="center"
-                        android:textColor="#7c818c"
-                        android:textSize="26sp" />
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:text="@string/economico"
-                        android:textAlignment="center"
-                        android:textColor="#7c818c"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/car_offer_amount"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="50dp"
-                        android:text="0"
-                        android:textAlignment="center"
-                        android:textColor="#7c818c"
-                        android:textSize="26sp" />
                 </GridLayout>
             </LinearLayout>
 
@@ -174,109 +139,43 @@
             android:textSize="34sp" />
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="15dp"
-            android:text="@string/cancelamento_grat_s_at_48_horas_antes_da_retirada_n"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
-
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:columnCount="2"
             android:paddingHorizontal="15dp"
-            android:rowCount="2"
+            android:rowCount="1"
             android:stretchMode="columnWidth">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/quilometragem_livre"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="999.99"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/prote_o_contra_roubo_com_franquia_de_rs"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="999.99"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/isens_o_por_colis_o_com_franquia_de_rs"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="999.99"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
         </GridLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="68dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginHorizontal="50dp"
-                android:orientation="horizontal">
-
-
-            </LinearLayout>
-        </RelativeLayout>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:paddingHorizontal="15dp"
+        android:text="@string/cancelamento_grat_s_at_48_horas_antes_da_retirada_n"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Linear_01" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="127dp"
         android:layout_height="91dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginBottom="44dp"
-        android:text="@string/seguir_c_prote_o"
-        android:onClick="orderInsurance"
+        android:layout_marginTop="80dp"
         android:backgroundTint="@color/green"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/Linear_01" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="127dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginBottom="44dp"
         android:onClick="order"
-        android:text="@string/seguir_sem_prote_o"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        android:text="@string/seguir_c_prote_o"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Linear_01" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

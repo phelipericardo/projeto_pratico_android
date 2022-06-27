@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BuildAttributionWarningsFilter">
+    <option name="noGCSettingWarning" value="true" />
+  </component>
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
@@ -9,6 +12,9 @@
         <entry key="..\:/Users/8981423/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene04.xml" value="0.25" />
         <entry key="..\:/Users/8981423/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene05.xml" value="0.25" />
         <entry key="..\:/Users/8981423/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene06.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/drawable/01_background.xml" value="0.1525" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/drawable/03_background.xml" value="0.1525" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/drawable/04_background.xml" value="0.1525" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/drawable/aproval_button.xml" value="0.1385" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/drawable/comum_button.xml" value="0.1385" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/drawable/denial_button.xml" value="0.1385" />
@@ -17,7 +23,8 @@
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/drawable/layout_main_card.xml" value="0.138" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/2.xml" value="0.2465175179400591" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_2main.xml" value="0.22" />
-        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/activity_mainBackup.xml" value="0.1" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/car_list_item.xml" value="0.2" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/car_offer_item.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/drop_down_menu.xml" value="0.22447916666666667" />
@@ -28,15 +35,17 @@
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene02.xml" value="0.22" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene03.xml" value="0.22" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene04.xml" value="0.25" />
-        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene05.xml" value="0.33" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene05.xml" value="0.25" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene06.xml" value="0.2" />
-        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene07.xml" value="0.25" />
-        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene08.xml" value="0.25" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene07.xml" value="0.33" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene08.xml" value="0.2" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene09.xml" value="0.25" />
-        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene10.xml" value="0.27353313634444915" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/scene10.xml" value="0.22" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/simple_spinner_dropdown_item.xml" value="0.27353313634444915" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/layout/simple_spinner_item.xml" value="0.27353313634444915" />
         <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/menu/type_popup_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/mipmap-anydpi-v26/01.xml" value="0.1525" />
+        <entry key="..\:/Users/namae/AndroidStudioProjects/MyApplication5/app/src/main/res/mipmap-anydpi-v26/01_round.xml" value="0.1525" />
       </map>
     </option>
   </component>

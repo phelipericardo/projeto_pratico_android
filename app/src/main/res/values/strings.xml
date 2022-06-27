@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Local Car</string>
     <string name="como_podemos_ajud_l">Como podemos Ajudá-lô?</string>
     <string name="buscar_ncarro">Buscar \nCarro</string>
     <string name="consultar_nreserva">Consultar \nReserva</string>
@@ -14,7 +14,7 @@
     <string name="cpf">CPF</string>
     <string name="carros_dispon_veis">Carros Disponíveis</string>
     <string name="pequeno">Pequeno</string>
-    <string name="medium">Medium</string>
+    <string name="medium">Médio</string>
     <string name="suv">SUV</string>
     <string name="premium">Premium</string>
     <string name="seguir_sem_prote_o">Seguir Sem Proteção</string>
@@ -27,7 +27,7 @@
     <string name="isens_o_por_colis_o_com_franquia_de_rs">Isensão por colisão com franquia de RS:</string>
     <string name="portas">Portas</string>
     <string name="malas">Malas</string>
-    <string name="economico">Economico</string>
+    <string name="economico">Econômico</string>
     <string name="km_livres">KM Livres</string>
     <string name="dados_do_comprador">Dados do Comprador</string>
     <string name="dados_cadastrais">Dados Cadastrais</string>
@@ -45,14 +45,14 @@
     <string name="date_mask">##/##/####</string>
     <string name="card_mask">####-####-####-####</string>
     <string name="data_de_validade">Data de Validade</string>
-    <string name="numero_do_cart_o">Numero do cartão</string>
+    <string name="numero_do_cart_o">Número do cartão</string>
     <string name="nome_do_titular">Nome do Titular</string>
-    <string name="cancelar_agenda">Cancelar Agenda</string>
-    <string name="valor_total">Valor total</string>
+    <string name="cancelar_agenda">Cancelar Agendamento</string>
+    <string name="valor_total">Valor Total</string>
     <string name="exemplo_exemplo_com_br">exemplo@exemplo.com.br</string>
     <string name="seu_nome_completo_aqui">Seu nome completo aqui</string>
     <string name="termos_e_condi_es">Termos e Condições</string>
-    <string name="blablabla_infinito">Blablabla infinito</string>
+    <string name="blablabla_infinito">Termos e condições da plataforma\n\n1\n2\n3\n4\n5\n6</string>
 
         <string-array name="cidades">
             <item>São Paulo</item>

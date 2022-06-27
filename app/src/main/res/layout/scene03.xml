@@ -86,29 +86,6 @@
                             android:autofillHints="" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:layout_marginBottom="50dp"
-                    app:cardBackgroundColor="#242a33"
-                    app:cardCornerRadius="35dp">
-
-                        <EditText
-                            android:id="@+id/reserva_n_reserva"
-                            android:layout_width="match_parent"
-                            android:layout_height="75dp"
-                            android:ems="10"
-                            android:hint="@string/reserva"
-                            android:inputType="number"
-                            android:paddingTop="10dp"
-                            android:textAlignment="center"
-                            android:textColor="#7c818c"
-                            android:textColorHint="#7c818c"
-                            android:textSize="30sp"
-                            tools:ignore="RtlSymmetry"
-                            android:importantForAutofill="no" />
-
-                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:onClick="searchForAppointment"

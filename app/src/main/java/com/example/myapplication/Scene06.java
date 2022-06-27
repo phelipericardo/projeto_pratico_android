@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
@@ -29,7 +30,7 @@ public class Scene06 extends AppCompatActivity {
     }
 
     public void returnDetail (View v) {
-        startActivity(new Intent(Scene06.this, Scene05.class));
+        startActivity(new Intent(Scene06.this, Scene02.class));
         finish();
     }
     public void payment (View v) {
@@ -70,7 +71,24 @@ public class Scene06 extends AppCompatActivity {
             return;
         }
 
-        startActivity(new Intent(Scene06.this, Scene07.class));
+        int carId = 1;
+        Bundle extras = getIntent().getExtras();
+        String value = "";
+        String value1 = "";
+        if (extras != null) {
+            value = extras.getString("checkin");
+            value1 = extras.getString("checkout");
+            carId = extras.getInt("carid");
+        }
+
+        Intent i = new Intent(Scene06.this, Scene07.class);
+        String stringcpf = editText.getText().toString();
+        String unmaskCPF = Lib.unmask(stringcpf);
+        i.putExtra("cpf", unmaskCPF);
+        i.putExtra("checkin", value);
+        i.putExtra("checkout", value1);
+        i.putExtra("carid", carId);
+        startActivity(i);
         finish();
     }
 }

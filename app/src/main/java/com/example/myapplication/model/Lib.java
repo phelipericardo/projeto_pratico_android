@@ -177,7 +177,7 @@ public class Lib {
             public void afterTextChanged(Editable s) {}
         };
     }
-    private static String unmask(String s) {
+    public static String unmask(String s) {
         return s.replaceAll("[.]", "").replaceAll("[-]", "")
                 .replaceAll("[/]", "").replaceAll("[(]", "")
                 .replaceAll("[)]", "");

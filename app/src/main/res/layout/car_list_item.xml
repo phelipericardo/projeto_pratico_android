@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
-    android:onClick="carInfo"
+    android:id="@+id/recycleObj"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/light_black"
@@ -20,6 +21,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@color/white" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/car_id"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="29dp"
+        android:text="@string/titulo_do_veiculo"
+        android:textColor="#7c818c"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/car_door_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/car_image"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/car_title"
@@ -119,35 +138,35 @@
             android:id="@+id/car_star1"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            app:tint="@color/deep_yellow"
+            app:tint="@color/light_gray"
             tools:srcCompat="@drawable/ic_baseline_star_24" />
 
         <ImageView
             android:id="@+id/car_star2"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            app:tint="@color/deep_yellow"
+            app:tint="@color/light_gray"
             tools:srcCompat="@drawable/ic_baseline_star_24" />
 
         <ImageView
             android:id="@+id/car_star3"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            app:tint="@color/deep_yellow"
+            app:tint="@color/light_gray"
             tools:srcCompat="@drawable/ic_baseline_star_24" />
 
         <ImageView
             android:id="@+id/car_star4"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            app:tint="@color/deep_yellow"
+            app:tint="@color/light_gray"
             tools:srcCompat="@drawable/ic_baseline_star_24" />
 
         <ImageView
             android:id="@+id/car_star5"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            app:tint="@color/deep_yellow"
+            app:tint="@color/light_gray"
             tools:srcCompat="@drawable/ic_baseline_star_24" />
     </LinearLayout>
 

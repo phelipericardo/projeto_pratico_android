@@ -44,48 +44,60 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/button_filter_small"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="5dp"
                 android:backgroundTint="@color/gold"
+                android:onClick="filter"
+                android:tag="small"
                 android:text="@string/pequeno"
-                android:textColor="#616161"
-                android:textStyle="bold"
                 android:textAllCaps="true"
-                android:textSize="12sp" />
+                android:textColor="#616161"
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <Button
+                android:id="@+id/button_filter_medium"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="5dp"
                 android:backgroundTint="@color/gold"
+                android:onClick="filter"
+                android:tag="medio"
                 android:text="@string/medium"
-                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <Button
+                android:id="@+id/button_filter_suv"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="5dp"
                 android:backgroundTint="@color/gold"
+                android:onClick="filter"
+                android:tag="suv"
                 android:text="@string/suv"
-                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
             <Button
+                android:id="@+id/button_filter_premium"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginHorizontal="5dp"
                 android:backgroundTint="@color/gold"
+                android:onClick="filter"
+                android:tag="premium"
                 android:text="@string/premium"
-                android:textStyle="bold"
                 android:textAllCaps="true"
                 android:textColor="#616161"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>

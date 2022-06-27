@@ -8,7 +8,10 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapplication.classes.Reserva;
+import com.example.myapplication.model.AppDatabase;
 import com.example.myapplication.model.Lib;
+import com.example.myapplication.model.ReservaDao;
 
 public class Scene03 extends AppCompatActivity {
     @Override
@@ -29,7 +32,6 @@ public class Scene03 extends AppCompatActivity {
     public void searchForAppointment (View r){
 
         EditText editText = findViewById(R.id.cpf_editText);
-        EditText editTextB = findViewById(R.id.reserva_n_reserva);
 
         if(editText.getText().length()==0) {
             editText.setError("O campo de CPF não pode estar vázio");
@@ -39,13 +41,21 @@ public class Scene03 extends AppCompatActivity {
             editText.setError("Você deve preencher com um CPF válido");
             return;
         }
-        if(editTextB.getText().length()==0) {
-            editTextB.setError("O campo de NºReserva não pode estar vázio");
-            return;
-        }
-        //Necessário válidar a reserva se está em formato correto, tem que definir os criterios da validação para implementar
-        startActivity(new Intent(Scene03.this, Scene09.class));
-        finish();
-    }
 
+        AppDatabase db = AppDatabase.getInstance(this);
+        ReservaDao dao = db.reservadao();
+
+        EditText txt = findViewById(R.id.cpf_editText);
+
+        String stringid = Lib.unmask(txt.getText().toString());
+
+        Reserva reserva = dao.buscarReserva(stringid);
+
+        if (reserva != null){
+                Intent i = new Intent(Scene03.this, Scene09.class);
+                i.putExtra("reservaid", reserva.id);
+                startActivity(i);
+                finish();
+            }
+        }
 }

@@ -8,7 +8,17 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapplication.classes.Car;
+import com.example.myapplication.classes.Reserva;
+import com.example.myapplication.model.AppDatabase;
+import com.example.myapplication.model.CarDao;
+import com.example.myapplication.model.DateConverter;
 import com.example.myapplication.model.Lib;
+import com.example.myapplication.model.ReservaDao;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Scene07 extends AppCompatActivity {
     @Override
@@ -35,7 +45,7 @@ public class Scene07 extends AppCompatActivity {
         finish();
     }
     public void returnDetail (View v) {
-        startActivity(new Intent(Scene07.this, Scene06.class));
+        startActivity(new Intent(Scene07.this, Scene02.class));
         finish();
     }
     public void closeOrder (View v) {
@@ -69,8 +79,46 @@ public class Scene07 extends AppCompatActivity {
             return;
         }
 
-        startActivity(new Intent(Scene07.this, Scene08.class));
+
+        int carId = -1;
+        Bundle extras = getIntent().getExtras();
+        String value = "";
+        String value1 = "";
+        String cpf = "";
+        if (extras != null) {
+            value = extras.getString("checkin");
+            value1 = extras.getString("checkout");
+            carId = extras.getInt("carid");
+            cpf = extras.getString("cpf");
+        }
+
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date d = null,datab = null;
+        try {
+            d = dateFormat.parse(value);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        try {
+            datab = dateFormat.parse(value1);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        AppDatabase db = AppDatabase.getInstance(this);
+        ReservaDao dao = db.reservadao();
+        Reserva reserva = new Reserva(0, carId, cpf, d, datab, "2");
+        dao.insertAll(reserva);
+        CarDao carDao  = db.cardao();
+        carDao.locarCarro(carId);
+
+        /*
+        Intent i = new Intent(Scene07.this, Scene08.class);
+        startActivity(i);
         finish();
+
+         */
     }
 
 

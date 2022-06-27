@@ -18,6 +18,7 @@ public class Scene10 extends AppCompatActivity {
 
     public void backToPayment (View v) {
         startActivity(new Intent(Scene10.this, Scene07.class));
+
         finish();
     }
 

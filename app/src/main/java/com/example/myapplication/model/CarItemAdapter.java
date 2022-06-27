@@ -8,15 +8,20 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
+import com.example.myapplication.Scene04;
+import com.example.myapplication.classes.Car;
 
 import java.util.List;
 
 public class CarItemAdapter extends RecyclerView.Adapter<CarItemAdapter.CarItemViewHolder> {
-    private final List<CarItem> cars;
+    private final List<Car> cars;
 
-    public CarItemAdapter(List<CarItem> carItens) {
+    public CarItemAdapter(List<Car> carItens) {
         this.cars = carItens;
     }
+
+
+
     @NonNull
     @Override
     public CarItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -25,7 +30,7 @@ public class CarItemAdapter extends RecyclerView.Adapter<CarItemAdapter.CarItemV
     }
     @Override
     public void onBindViewHolder(@NonNull CarItemViewHolder holder, int position) {
-        CarItem item = cars.get(position);
+        Car item = cars.get(position);
         holder.bind(item);
     }
     @Override
@@ -34,6 +39,7 @@ public class CarItemAdapter extends RecyclerView.Adapter<CarItemAdapter.CarItemV
     }
 
     static class CarItemViewHolder extends RecyclerView.ViewHolder {
+        TextView id;
         TextView title;
         TextView price;
         TextView star1;
@@ -48,6 +54,7 @@ public class CarItemAdapter extends RecyclerView.Adapter<CarItemAdapter.CarItemV
         public CarItemViewHolder(@NonNull View itemView) {
             super(itemView);
             try {
+                id = itemView.findViewById(R.id.car_id);
                 title = itemView.findViewById(R.id.car_title);
                 door = itemView.findViewById(R.id.car_door_amount);
                 bagged = itemView.findViewById(R.id.car_bagged_amount);
@@ -60,12 +67,13 @@ public class CarItemAdapter extends RecyclerView.Adapter<CarItemAdapter.CarItemV
                 star5 = itemView.findViewById(R.id.car_star5);
             } catch (Exception e){}
         }
-        public void bind(CarItem item) {
+        public void bind(Car item) {
             try {
-                title.setText(item.getTitle());
-                door.setText(String.valueOf(item.getDoor()));
-                bagged.setText(String.valueOf(item.getBagged()));
-                price.setText(String.valueOf(item.getPrice()));
+                id.setText(item.id);
+                title.setText(item.title);
+                door.setText(String.valueOf(item.door));
+                bagged.setText(String.valueOf(item.bagged));
+                price.setText(String.valueOf(item.price));
                 switch (item.star){
                     case 5:
                         star5.setBackgroundColor(1);
